@@ -28,8 +28,23 @@ To maintain a dictionary of students with their marks in five subjects, calculat
 ---
 
 ## 💻 PROGRAM:
-ADD CODE HERE
+```
+student_marks = {
+      'Alice': [87, 94, 92, 88, 94],
+      'Bob': [87, 67, 78, 75, 83],
+      'Eve': [91, 93, 85, 86, 81]
+  }
+  
+  total_marks = {name: sum(marks) for name, marks in student_marks.items()}
+  topper = max(total_marks, key=total_marks.get)
+  top_score = total_marks[topper]
+  
+  print(total_marks)
+  print("Topper is:", topper, "with marks =", top_score)
+```
 
 ## OUTPUT
+![image](https://github.com/user-attachments/assets/5d7d466a-6064-4fd6-b807-9a17c72f4e62)
 
 ## RESULT
+Thus, the program has been execueted successfully.
